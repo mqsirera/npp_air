@@ -122,4 +122,3 @@ def evaluate_model(model, test_loader, name="Model", device='cuda'):
     r2 = r2_score(y_true_all, y_pred_all)
 
     print(f"[{name}] Test MSE: {mse:.4f} | R²: {r2:.4f}")
-    return mse, r2
